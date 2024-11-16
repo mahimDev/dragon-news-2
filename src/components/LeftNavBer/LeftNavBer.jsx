@@ -8,7 +8,7 @@ const LeftNavBer = () => {
             .then(res => res.json())
             .then(data => setCategories(data.data.news_category))
     }, [])
-    console.log(categories)
+
     return (
         <div>
             <button>All Categories({categories.length})</button>

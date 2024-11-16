@@ -53,7 +53,7 @@ const NewsCard = (props = {}) => {
                     {article.details}
                 </p>
                 <Link
-                    to="/details"
+                    to={`/news/${article._id}`}
                     className="text-blue-500 text-sm font-medium hover:underline mt-2 inline-block"
                 >
                     Read More
