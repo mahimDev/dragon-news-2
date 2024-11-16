@@ -1,5 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import HomeLayout from "../Layout/HomeLayout";
+import Categories from "../Pages/Categories/Categories";
 
 const router = createBrowserRouter([
 
@@ -8,8 +9,13 @@ const router = createBrowserRouter([
         element: <HomeLayout></HomeLayout>,
         children: [
             {
-                path: '/',
-                element: <div>home</div>
+                path: '',
+                element: <Navigate to={`/categories/1`}></Navigate>
+            },
+            {
+                path: '/categories/:id',
+                element: <Categories></Categories>,
+                loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/news/category/${params.id}`)
             }
         ]
     }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NavBer = () => {
     return (
-        <div className="flex justify-between mt-8 w-11/12 mx-auto">
+        <div className="flex justify-between items-center mt-8 w-11/12 mx-auto">
             <div></div>
             <ul className="flex gap-5 font-semibold text-xl">
                 <Link to="/"><li>Home</li></Link>
