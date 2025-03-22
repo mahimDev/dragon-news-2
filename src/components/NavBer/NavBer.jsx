@@ -8,22 +8,23 @@ const NavBer = () => {
     const handleLogoutBtn = () => {
         signOutUser()
             .then(() => {
-                console.log("User logged out")
+                // console.log("User logged out")
             })
             .catch(err => {
-                console.log(err)
+                // console.log(err)
             })
     }
     return (
-        <div className="flex justify-between items-center mt-8 w-11/12 mx-auto">
+        <div className=" flex justify-center items-center  w-11/12 mx-auto">
             <div>{user && user.displayName ? user.displayName : ""}</div>
-            <ul className="flex gap-5 font-semibold text-xl">
+            <ul className="flex justify-center gap-5 font-semibold text-xl">
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/"><li>About</li></Link>
                 <Link to="/"><li>Career</li></Link>
                 {/* https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png */}
             </ul>
-            <div className="flex items-center gap-4">
+            {/* login  */}
+            {/* <div className="flex  items-center gap-4">
                 {
                     user && user?.email ?
 
@@ -49,7 +50,7 @@ const NavBer = () => {
                     >Login</Link>
                 }
 
-            </div>
+            </div> */}
         </div>
     );
 };

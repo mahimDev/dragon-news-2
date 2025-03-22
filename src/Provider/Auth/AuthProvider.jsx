@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
             unSubscribe()
         }
     }, [])
-    // console.log(user)
+
     const authInfo = {
         user, loading, setUser, createUser, signInUser, signOutUser, updatedUser
     }

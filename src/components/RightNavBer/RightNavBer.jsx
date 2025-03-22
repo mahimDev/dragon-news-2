@@ -4,7 +4,7 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 const RightNavBer = () => {
     return (
         <div>
-            <SocialLogin></SocialLogin>
+            {/* <SocialLogin></SocialLogin> */}
             <SocialFind></SocialFind>
         </div>
     );

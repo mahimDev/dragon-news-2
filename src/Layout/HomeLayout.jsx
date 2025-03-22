@@ -12,7 +12,7 @@ const HomeLayout = () => {
             <section className="w-11/12 mx-auto">
                 <LatestNews></LatestNews>
             </section>
-            <nav><NavBer></NavBer></nav>
+            <nav className="sticky top-0 z-30 bg-black/10 py-4 mt-8 "><NavBer></NavBer></nav>
             <main className="w-11/12 mx-auto grid grid-cols-12 gap-5">
                 <aside className="col-span-3">
                     <LeftNavBer></LeftNavBer>
